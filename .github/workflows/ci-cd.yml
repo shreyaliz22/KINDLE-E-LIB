@@ -3,10 +3,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - dev  # Runs on every push to dev
-  pull_request:
-    branches:
-      - main  # Runs on PRs to main
+      - main
+      - dev
+      - feature-ci-cd
+  workflow_dispatch:
+
 
 jobs:
   build:
